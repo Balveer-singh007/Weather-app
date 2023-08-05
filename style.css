@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(40, 44, 78);
+}
+#fullcard {
+  background-color: rgb(35, 37, 67);
+  width: 95%;
+  margin: auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+#search {
+  margin-bottom: 3rem;
+}
+.header {
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.search-container {
+  display: flex;
+  width: 80%;
+  height: 50px;
+  background-color: rgb(40, 44, 78);
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #00000040;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+}
+.search-container > input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: transparent;
+  padding-left: 20px;
+  background-color: rgb(40, 44, 78);
+  text-decoration: none;
+  color: white;
+}
+button {
+  width: 18%;
+  background: #4a397fb2;
+  border: none;
+  font-size: 18px;
+  border-radius: 10%;
+  color: white;
+}
+button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+#card-container {
+  width: 90vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  background-image: url("Rectangle\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: scale 400ms ease-in-out;
+}
+.card:hover {
+  scale: 1.05;
+}
+.temp > img {
+  background-color: #42a9a0;
+  border-radius: 50%;
+}
+.card > .temp {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  color: white;
+}
+.temp > .curr-temp {
+  font-size: 50px;
+}
+.block-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.block-2-2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.block-2-1 > .high-temp {
+  color: rgb(33, 32, 32);
+  font-size: 20px;
+  font-weight: 400;
+}
+.block-2-1 > .low-temp {
+  color: rgb(110, 110, 110);
+  font-size: 20px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 22px;
+}
+.block-2-1 > .city-block {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3px;
+  color: #ebebf5;
+}
+.block-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ebebf5;
+}
+.block-3-1 {
+  display: flex;
+  flex-direction: column;
+}
+.block-3-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+  #card-container {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    background-image: url("Rectangle\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: scale 400ms ease-in-out;
+  }
+  .card:hover {
+    scale: 1.01;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #card-container {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
