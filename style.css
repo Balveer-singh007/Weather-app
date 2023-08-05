@@ -108,14 +108,14 @@ button:hover {
   color: white;
 }
 .block-2-1 > .high-temp {
-  color: rgb(33, 32, 32);
+  color: rgb(100, 0, 0);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .block-2-1 > .low-temp {
-  color: rgb(110, 110, 110);
+  color: rgb(0, 5, 62);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 h3 {
   font-size: 22px;
